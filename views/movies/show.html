@@ -1,0 +1,27 @@
+<div class="ui raised segment">
+  <h1>{{movies.movie.Title}}</h1>
+  <div class="ui items">
+    <div class="item">
+      <div class="image">
+        <img ng-src={{movies.movie.Poster}}>
+      </div>
+      <div class="content">
+        <div class="meta">
+          <span><strong>Starring: </strong>{{movies.movie.Actors}}</span>
+        </div>
+        <div class="description">
+          <p>{{movies.movie.Plot}}</p>
+        </div>
+        <h3>Additional Details</h3>
+        <div class="extra">
+          <div class="ui list">
+            <div class="item" ng-repeat="(detail,data) in movies.movieAdditionals">
+              <div class="header">{{detail}}</div>
+              {{data}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

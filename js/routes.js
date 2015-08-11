@@ -5,4 +5,12 @@ angular.module('movieRouter',['ngRoute']).config(['$routeProvider', function($ro
     controller: 'moviesController',
     controllerAs: 'movies'
   })
+  .when('/:movieId/show',{
+    templateUrl:'/views/movies/show.html',
+    controller: 'moviesController',
+    controllerAs: 'movies'
+  })
+  .otherwise({
+    redirecTo: '/:search'
+  })
 }])
