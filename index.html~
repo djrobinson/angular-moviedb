@@ -13,7 +13,11 @@
   </head>
   <body>
   
-
+  <div ng-controller="SpicyController">
+ <button ng-click="chiliSpicy()">Chili</button>
+ <button ng-click="jalapenoSpicy()">Jalapeño</button>
+ <p>The food is {{spice}} spicy!</p>
+</div>
 
   <div class="ui vertical masthead center aligned segment">
 
@@ -28,12 +32,6 @@
       </p>
       <a ng-href="#/{{movieSearch}}"><div class="ui primary button">Search! <i class="right arrow icon"></i></div></a>
     </div>
-
-		<div ng-controller="SpicyController">
-		 <button ng-click="chiliSpicy()">Chili</button>
-		 <button ng-click="jalapenoSpicy()">Jalapeño</button>
-		 <p>The food is {{spice}} spicy!</p>
-		</div>
 
   </div>
 
